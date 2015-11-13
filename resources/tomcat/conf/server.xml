@@ -23,7 +23,7 @@
 		
 		<Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
-			   keystoreFile="/home/vcap/serverssl.jks" keystorePass="serverssl"
+			   keystoreFile="./serverssl.jks" keystorePass="serverssl"
 			   truststoreFile="/resources/open_jdk_jre/lib/security/cacerts" truststorePass="changeit"
                keyAlias = "1" truststoreType="JKS" clientAuth="true" sslProtocol="TLS" />
 			   
