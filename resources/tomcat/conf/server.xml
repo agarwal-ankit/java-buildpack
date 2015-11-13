@@ -21,7 +21,7 @@
     <Service name='Catalina'>
         <Connector port='${http.port}' bindOnInit="false" connectionTimeout="20000"/>
 		
-		<Connector port="443" protocol="org.apache.coyote.http11.Http11Protocol"
+		<Connector port="8443" protocol="org.apache.coyote.http11.Http11Protocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
 			   keystoreFile="./conf/serverssl.jks" keystorePass="serverssl"
 			   truststoreFile="./conf/cacerts" truststorePass="changeit"
