@@ -24,7 +24,7 @@
 		<Connector port="443" protocol="org.apache.coyote.http11.Http11Protocol"
                maxThreads="150" SSLEnabled="true" scheme="https" secure="true"
 			   keystoreFile="./conf/serverssl.jks" keystorePass="serverssl"
-			   truststoreFile="$HOME/lib/security/cacerts" truststorePass="changeit"
+			   truststoreFile="./conf/cacerts" truststorePass="changeit"
                keyAlias = "1" truststoreType="JKS" clientAuth="true" sslProtocol="TLS" />
 			   
 			 <Engine defaultHost='localhost' name='Catalina'>
